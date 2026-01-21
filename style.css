@@ -7,8 +7,8 @@
 :root {
   --principal: #000000;
   --secundaria: #51ff00;
-  --cor-fundo:  #2a7f00;
-  --texto: #8dff5a;
+  --terciaria:  #2a7f00;
+  --quaternaria: #8dff5a;
 }
 
 body {
@@ -16,37 +16,28 @@ body {
     color: rgb(0, 255, 0);
 }
 
-.logo-header img {
-    width: 50px;
-}
-
 header {
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    margin: 30px;
     align-items: center;
-}
-
-.btn-header {
-display: flex;
-    a {
-        padding: 10px;
-        margin: 10px;
-        background-color: var(--principal);
-        border-radius: 30px;
-        border: 1px solid var(--secundaria);
-        color: var(--secundaria);
+    nav a {
+        color: #51ff00;
         text-decoration: none;
+        padding: 10px;
+        margin: 0 20px;
+        border: 1px solid transparent;
         transition: 0.5s;
+        border-radius: 20px;
     }
-    a:hover {
-        background-color: var(--secundaria);
-        color: var(--principal);
-        transition: 0.5s;
+    nav a:hover {
+        border: 1px solid #51ff00;
     }
 }
 
-
+.logo img {
+    width: 50px;
+}
 
 
 
@@ -232,15 +223,19 @@ footer a {
    }
 }
 
-
-
-.clearfix{
-    clear: both;
-}
-
 footer p {
     text-align: center;
 }
+
+
+.linkfoot {
+    text-decoration: none;
+}
+
+.linkfoot:hover {
+    text-decoration: underline;
+}
+
 
 
 
