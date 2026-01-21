@@ -1,74 +1,64 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Arial, verdana, tahoma;
+}
 
+:root {
+  --principal: #000000;
+  --secundaria: #51ff00;
+  --cor-fundo:  #2a7f00;
+  --texto: #8dff5a;
 }
 
 body {
-    font-family: Arial, verdana, tahoma;
     background-color: rgb(0, 0, 0);
     color: rgb(0, 255, 0);
-    margin: 0;
-    padding-top: 100px;
 }
 
 .logo-header img {
     width: 50px;
 }
 
-.header {
-    width: 100%;
+header {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: rgb(0, 0, 0);
-    height: 56px;
     justify-content: space-between;
-    padding: 10px;
-    box-sizing: border-box;
-    position: fixed;
-    top: 0;
-}
-
-.hud {
-    display: flex;
-    float: right;
-    flex-direction: row;
+    margin: 20px;
     align-items: center;
-    gap: 10px;
-    transition: 1s;
-    font-weight: bold;
-    box-sizing: border-box;
 }
 
-.hud .resto a {
-    border-radius: 30px;
-    padding: 6px;
-    text-decoration: none;
-    background-color: rgb(0, 255, 0);
-    color: rgb(0, 0, 0);
-    
-}
-.hud .maioria a {
-    border-radius: 30px;
-    padding: 6px;
-    text-decoration: none;
-    background-color: rgb(46, 46, 46);
-    color: rgb(0, 255, 0);
-    
-}
-
-.hud .maioria a:hover {
-    box-shadow: 0 0 5px rgb(9, 255, 0);
-}
-
-.hud .resto a:hover {
-    box-shadow: 0 0 5px rgb(9, 255, 0);
+.btn-header {
+display: flex;
+    a {
+        padding: 10px;
+        margin: 10px;
+        background-color: var(--principal);
+        border-radius: 30px;
+        border: 1px solid var(--secundaria);
+        color: var(--secundaria);
+        text-decoration: none;
+        transition: 0.5s;
+    }
+    a:hover {
+        background-color: var(--secundaria);
+        color: var(--principal);
+        transition: 0.5s;
+    }
 }
 
 
 
 
+
+
+
+
+
+
+
+
+
+-----------------------------------
 
 .Formulário{
     h1{
